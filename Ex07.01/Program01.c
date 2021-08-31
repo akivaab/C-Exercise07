@@ -14,4 +14,6 @@ int main(void)
     SWAP(char, charA, charB);
     printf("charA: %c\n", charA);
     printf("charB: %c\n", charB);
+
+    return 0;
 }

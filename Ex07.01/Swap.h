@@ -8,7 +8,7 @@
 /**
  * @brief Macro swap function.
 */
-#define SWAP(t, x, y) { t temp = x; x = y; y = temp; }
+#define SWAP(t, x, y) { t temp = (x); (x) = (y); (y) = temp; }
 
 #endif
 
