@@ -11,12 +11,11 @@
  * 
  * @note the first parameter ot the macro must be a ToString() function
 */
-#define DEBUG 1
-#ifdef DEBUG
+#ifdef _DEBUG
 # define TRACE_VAR(func, x) printf("%s = %s\n", #x, func(x))
 #else
 # define TRACE_VAR(x) do {} while(0)
-#endif //  DEBUG
+#endif //  _DEBUG
 
 /**
  * @brief Convert an integer to a string.
@@ -54,4 +53,4 @@ char *DoubleToString(double num);
 */
 char *CharToString(char ch);
 
-#endif // !_VAR_TRACING_H_
+#endif
